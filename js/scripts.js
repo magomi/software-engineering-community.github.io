@@ -34,6 +34,8 @@
     var loadEvents = function(eventData) {
         var eventContainer = $('#eventList');
 
+	eventData.push(JSON.parse('{"status": "upcoming", "local_date": "2020-05-05", "local_time": "12:00", "link": "https://devday.de", "name": "DevDay 2020"}'));
+	
         for (var index = 0; index < eventData.length; index++) {
             var event = eventData[index];
             console.log(event)
